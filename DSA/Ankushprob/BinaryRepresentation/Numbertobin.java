@@ -1,5 +1,12 @@
 import java.util.*;
 public class Numbertobin {
+    static int pow(int j){
+        int prod=1;
+        for(int i=0;i<j;i++){
+            prod=prod*2;
+        }
+        return prod;
+    }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
@@ -11,7 +18,8 @@ public class Numbertobin {
         int j=0;
         for(int i=arr.length-1;i>=0;i--){
             if(arr[i]==1){
-                value+=Math.pow(2,j);
+                value+=pow(j);
+                // value+=Math.pow(2,j);
             }
             j++;
         }
