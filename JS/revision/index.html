@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Pavan</h1>
+        <h1 style="color:green;">
+            GeeksforGeeks
+        </h1>
+          
+        <!-- <h3>
+            Click on the button to check whether<br>
+            a radio button is sected or not
+        </h3> -->
+          
+        <form>
+            <div >
+            <input type="radio" name="GFG" id="GFG"
+                value="GeeksforGeeks">YES<br>
+              
+            <input type="radio" name="GFG" id="HTML"
+                value="HTML">NOL<br>
+               
+            <!-- <input type="radio" name="GFG" id="JS"
+                value="JavaScript">JavaScript<br><br> -->
+          
+            <button type="button" onclick="display()">
+                Submit
+            </button>
+        </div>
+            <!-- <div id="disp" style=
+            "color:green; font-size:18px; font-weight:bold;">
+        </div>  -->
+        </form>
+        <br>
+       
+    </div>
+    <div  style="display: none;" id="form">
+        <h1>Pavan</h1>
+        <h1 style="color:green;">
+            GeeksforGeeks
+        </h1>
+          
+        <h3>
+            Click on the button to check whether<br>
+            a radio button is sected or not
+        </h3>
+       
+            <div id="disp" style=
+            "color:green; font-size:18px; font-weight:bold;">
+        </div> 
+        <button onclick="back()" >back</button>
+        <br>
+       
+    </div>
+    <div  style="display: none;" id="form1">
+        <h1>Pavan</h1>
+        <h1 style="color:green;">
+            GeeksforGeeks
+        </h1>
+          
+        <input type="text" name="" id="">
+<input type="text" name="" id="">        <h3 id="hq" style="display: none;">
+            Click on the button to check whether<br>
+            a radio button is sected or not
+        </h3>
+       
+            <div id="disp" style=
+            "color:green; font-size:18px; font-weight:bold;">
+        </div> 
+        <button onclick="back()" >back</button>
+        <br>
+       
+    </div>
+</body>
+</html>
+<script>
+
+function display() { 
+            if(document.getElementById('GFG').checked) {
+                var form=document.getElementById("form")
+                document.getElementById("disp").innerHTML
+                    = "Sorry,Your not eligible";
+                    form.style.display="block"
+            }
+            else if(document.getElementById('HTML').checked) {
+                var form=document.getElementById("form1")
+                 
+                form1.style.display="block"
+            }
+            // else if(document.getElementById('JS').checked) {
+            //     document.getElementById("disp").innerHTML
+            //         = document.getElementById("JS").value
+            //         + " radio button checked";  
+            // }
+            else {
+                document.getElementById("disp").innerHTML
+                    = "No one selected";
+            }
+        }
+
+        function back() {
+            var form=document.getElementById("form")
+                
+                    form.style.display="none"
+        }
+
+</script>
