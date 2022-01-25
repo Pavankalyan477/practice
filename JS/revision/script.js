@@ -94,23 +94,23 @@
 
 // console.log(s)
 
-var obj = {
-   // name:  "vivek",
-    getName: function(){
-    console.log(this);
-  }
+// var obj = {
+//    // name:  "vivek",
+//     getName: function(){
+//     console.log(this);
+//   }
         
-}
+// }
         
-obj.getName();      
+// obj.getName();      
 // var obj2 = {name:"akshay", getName };
 
-class Car {
-    constructor() {  // Constructor
-      this.carname ="Ford";
-    }
-  }
-  mycar = new Car();
-console.log(mycar)
+// class Car {
+//     constructor() {  // Constructor
+//       this.carname ="Ford";
+//     }
+//   }
+//   mycar = new Car();
+// console.log(mycar)
   
 
