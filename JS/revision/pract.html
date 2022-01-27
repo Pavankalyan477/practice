@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE</title>
+</head>
+<body>
+    <div>
+        <input placeholder="enter" id="inp"  type="text">
+        <button onclick="add()">ADD</button>
+        <button onclick="get()">sub</button>
+        <div id="disp"></div>
+    </div>
+</body>
+</html>
+<script>
+    var arr=[];
+
+    function add(){
+        let val=document.getElementById("inp").value
+        arr.push(val)
+        let val1=document.getElementById("disp")
+        let a=document.createElement("p");
+            a.append(val);
+            val1.appendChild(a);
+        localStorage.setItem("todo",arr);
+       
+
+       
+    }
+    
+    function get(){
+        let data=localStorage.getItem("todo");
+        //let ans=JSON.parse(data)
+        
+        arr.forEach(element => {
+           
+        });
+        console.log(data);
+       
+       
+    }
+    
+    console.log(arr);
+</script>
