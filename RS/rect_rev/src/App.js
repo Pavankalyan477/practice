@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 //import {useState} from "react"
-import {Todo} from "./components/Todo"
+//import {Todo} from "./components/Todo"
+import Counter from './components/Counter';
 
 function App() {
   // const [count,setCount]=useState(0);
@@ -18,6 +19,8 @@ function App() {
       
      }}>ADD</button> */}
      {/* <Todo/> */}
+
+     <Counter/>
      
     </div>
   );
