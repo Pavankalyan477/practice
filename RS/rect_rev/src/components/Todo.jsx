@@ -12,6 +12,7 @@ function Todo(){
             clr:"white"
         }
         setData([...data, payload])
+        setText("");
     }
     const handleRemove = id => {
       const updateTodo = data.filter(item => item.id !== id);
@@ -27,7 +28,7 @@ function Todo(){
        <br></br>
        <button onClick={handleAdd}>Submit</button>
         {data.map((e)=>(
-            <div key={e.id}>
+            <div key={e.id} style={{display:"flex"}}>
                 <div>{e.text}</div>
                 <button onClick={()=>
                         handleRemove(e.id)

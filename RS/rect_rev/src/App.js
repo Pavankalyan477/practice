@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 //import {useState} from "react"
-//import {Todo} from "./components/Todo"
+import {Todo} from "./components/Todo"
 import Counter from './components/Counter';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
        }
       
      }}>ADD</button> */}
-     {/* <Todo/> */}
+     <Todo/>
 
      <Counter/>
      

@@ -6,13 +6,22 @@ export default function Counter() {
     const [count,setCount]=useState(0)
 
     //  incr{
+      const set=()=>{
+        if(count>10){
+          setCount(0)
+        }
+      }
         useEffect(() => {
             const interval = setInterval(() => {
               setCount((prevCounter) => prevCounter + 1);
+              
             }, 1000);
+            
         
             return () => clearInterval(interval);
-          }, []);
+
+          }, [set()]);
+         
       
        
         
